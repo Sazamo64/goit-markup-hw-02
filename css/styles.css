@@ -12,36 +12,39 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
 
     color: var(--main-text-color);
-    background-color: var(--main-color);
+    background-color: var(--third-text-color);
 }
 
 
 /* ^ШАПКА (ЗАГАЛЬНА) */
 .head-block {
-    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
-    background-color: var(--third-text-color);
 }
 
-.head-block ul {
+.header-navigation,
+.header-contacts {
     list-style: none;
 }
 
-.head-block ul :hover,
-.head-block ul :focus {
-    color: var(--hover-color);
-}
-
-.head-block a {
+.navigation-links {
     text-decoration: none;
     color: inherit;
+}
+.contacts-links {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+.header-navigation :hover,
+.header-navigation :focus,
+.header-contacts :hover,
+.header-contacts :focus {
+    color: var(--hover-color);
 }
 
 .logo {
@@ -55,10 +58,13 @@ body {
     color: inherit;
 }
 
-.logo span {
+.logo .logo-colorize {
     color: var(--hover-color);
 }
 
+.header-navigation .current {
+    color: var(--hover-color);
+}
 
 
 /* ^ПІДВАЛ (ЗАГАЛЬНИЙ) */
@@ -68,7 +74,7 @@ body {
 .foot-block .logo {
     color: var(--third-text-color);
 }
-.foot-block address {
+.address-block {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -78,16 +84,16 @@ body {
     color: var(--third-text-color);
 }
 
-.foot-block ul {
+.footer-contacts {
     list-style: none;
 }
 
-.foot-block ul :hover,
-.foot-block ul :focus {
+.footer-contacts :hover,
+.footer-contacts :focus {
     color: var(--hover-color);
 }
 
-.foot-block a {
+.footer-contacts a {
     text-decoration: none;
     color: #FFFFFF96;
 }
@@ -97,7 +103,6 @@ body {
 /* &СПІЛЬНІ ЕЛЕМЕНТИ */
 /* заголовки секцій */
 .section-header {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
@@ -117,13 +122,14 @@ body {
 }
 
 
+
 /* ?СТОРІНКА "СТУДІЯ" */
 /* ^БЛОК-ГЕРОЙ */
 .hero {
     background-color: var(--second-color);
 }
 
-.hero h1 {
+.main-header {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -132,12 +138,12 @@ body {
     color: var(--third-text-color);
 }
 
-.hero button {
+.main-button {
     width: 216px;
     height: 50px;
     border-radius: 4px;
 
-    font-family: 'Roboto', sans-serif;
+    font-family:inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -152,22 +158,23 @@ body {
 
 
 /* ^БЛОК-1 */
-.first-block ul {
+.first-block {
+    background-color: var(--main-color);
+}
+.features-list {
     list-style: none;
 }
 
-.first-block h3 {
-    font-weight: 700;
+.features-list-header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
 }
 
-.first-block p {
+.features-list-text {
     width: 270px;
     height: 72px;
 
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -178,7 +185,10 @@ body {
 
 
 /* ^БЛОК-2 */
-.second-block ul {
+.second-block {
+    background-color: var(--main-color);
+}
+.activity-list {
     list-style: none;
 }
 
@@ -189,19 +199,18 @@ body {
     background-color: var(--third-color);
 }
 
-.third-block ul {
+.team-list {
     list-style: none;
 }
 
-.third-block h3 {
+.name {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
 
-.third-block p {
-    font-weight: 400;
+.position {
     font-size: 16px;
     line-height: 1.18;
 
@@ -212,44 +221,47 @@ body {
 
 /* ?СТОРІНКА "ПОРТФОЛІО" */
 /* ^БЛОК ПОРТФОЛІО */
-.portfolio-block ul{
+.portfolio-block {
+    background-color: var(--main-color);
+}
+.button-list,
+.card-list {
     list-style: none;
 }
 
-.button-list button {
+.filter{
     width: 125px;
     height: 38px;
+    border-radius: 4px;
 
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
+    font-family:inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
 
+    cursor: pointer;
     background-color: var(--third-color);
 }
 
-.button-list li :hover,
-.button-list li :focus {
+.button-list-item :hover,
+.button-list-item :focus {
     color: var(--third-text-color);
     background-color: var(--hover-color);
 }
 
-.card-list a{
+.card-link {
     text-decoration: none;
 }
 
-.card-list h2 {
-    font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
+.card-header {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
     color: var(--main-text-color);
 }
 
-.card-list p {
-    font-weight: 400;
+.card-description {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
