@@ -26,11 +26,6 @@ body {
     letter-spacing: 0.02em;
 }
 
-.header-navigation,
-.header-contacts {
-    list-style: none;
-}
-
 .navigation-links {
     text-decoration: none;
     color: inherit;
@@ -53,7 +48,6 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-
     text-decoration: none;
     color: inherit;
 }
@@ -80,12 +74,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     color: var(--third-text-color);
-}
-
-.footer-contacts {
-    list-style: none;
 }
 
 .footer-contacts :hover,
@@ -120,6 +109,10 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
+/* списки */
+.list {
+    list-style: none;
+}
 
 
 
@@ -134,7 +127,6 @@ body {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
-
     color: var(--third-text-color);
 }
 
@@ -142,29 +134,21 @@ body {
     width: 216px;
     height: 50px;
     border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--hover-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
     font-family:inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-
-    cursor: pointer;
     color: var(--third-text-color);
-    background-color: var(--hover-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
 
 /* ^БЛОК-1 */
-.first-block {
-    background-color: var(--main-color);
-}
-.features-list {
-    list-style: none;
-}
-
 .features-list-header {
     font-size: 14px;
     line-height: 1.14;
@@ -178,18 +162,7 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
     color: var(--secondary-text-color);
-}
-
-
-
-/* ^БЛОК-2 */
-.second-block {
-    background-color: var(--main-color);
-}
-.activity-list {
-    list-style: none;
 }
 
 
@@ -197,10 +170,6 @@ body {
 /* ^БЛОК-3 */
 .third-block {
     background-color: var(--third-color);
-}
-
-.team-list {
-    list-style: none;
 }
 
 .name {
@@ -213,7 +182,6 @@ body {
 .position {
     font-size: 16px;
     line-height: 1.18;
-
     color: var(--secondary-text-color);
 }
 
@@ -221,27 +189,18 @@ body {
 
 /* ?СТОРІНКА "ПОРТФОЛІО" */
 /* ^БЛОК ПОРТФОЛІО */
-.portfolio-block {
-    background-color: var(--main-color);
-}
-.button-list,
-.card-list {
-    list-style: none;
-}
-
 .filter{
     width: 125px;
     height: 38px;
     border-radius: 4px;
+    cursor: pointer;
+    background-color: var(--third-color);
 
     font-family:inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-
-    cursor: pointer;
-    background-color: var(--third-color);
 }
 
 .button-list-item :hover,
@@ -265,6 +224,5 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-
     color: var(--secondary-text-color);
 }
